@@ -2,9 +2,6 @@
     box-sizing: border-box;
   }
 
-body {
-    margin-left: 10%;
-}
 
 
 h1, h2 {
@@ -18,11 +15,24 @@ a {
     color: #777777;
 }
 
+a:hover {
+    color: #4aaaa5;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
+button {
+    background-color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: medium;
+}
+
+#profile-img {
     width: 179px;
     height: 143px;
     float: left;
@@ -34,11 +44,34 @@ hr {
     color: #777777;
 }
 
+.form-layout {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+#input-field {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    font-size: medium;
+    min-width: 610px;
+    min-height: 35px;
+}
+
+
+textarea {
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    font-size: medium;
+    min-width: 610px;
+    min-height: 150px;
+}
 
 #header {
-    padding: 20px 0px 100px 0px;
+    padding: 0px 0px 80px 0px;
     position: relative;
     width: 960px;
+    margin-left: 10%;
 }
 
 #logo {
@@ -52,26 +85,40 @@ hr {
 }
 
 #nav-bar {
-    padding: 40px 0px;
+    padding: 40px 10px;
     position: absolute;
     right: 0;
 }
 
 #main-container {
-    position: relative;
+    position: absolute;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
     width: 100%;
-    border-top: 2px;
-    border-top-color: #dddddd;
-    background-color: blue;
+    min-height: 100%;
+    left: 0;
+    border-top: solid;
+    border-top-color: #777777;
+    border-top-width: 2px;
+
+}
+
+#content-inside {
+    width: 960px;
+    position: relative;
+    margin-left: 10%;
+    min-height: 100%;
 }
 
 #content {
     padding: 20px;
-    position: absolute;
+    position: relative;
     width: 650px;
     border-style: solid;
     border-width: 1px;
     border-color: #dddddd;
+    background-color: #ffffff;
 }
 
 
@@ -79,11 +126,13 @@ hr {
 #aside {
     position: absolute;
     padding: 20px;
+    margin-left: 690px;
+    top: 0;
     width: 270px;
     border-style: solid;
     border-width: 1px;
     border-color: #dddddd;
-    margin-left: 690px;
+    background-color: #ffffff
 }
 
 #linked-img {
@@ -93,6 +142,19 @@ hr {
     padding-right: 10px;
     width: 70px;
     height: 60px;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+td {
+    left: 0;
+}
+.portfo-img {
+    width: 266px;
+    height: 200px;
 }
 
 #footer-wrapper {
@@ -111,8 +173,8 @@ hr {
     height: 85px;
     background-color: #777777;
     text-align: center;
-    font-size: x-small;
-    color: #ffffff;
+    font-size: small;
+    color: #dddddd;
     left: 0;
     bottom: 0;
 }  
