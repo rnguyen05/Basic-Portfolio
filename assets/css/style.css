@@ -144,17 +144,46 @@ textarea {
     height: 60px;
 }
 
-table {
-    margin-top: 30px;
+.table {
+    position: relative;
     width: 100%;
 }
 
-td {
-    left: 0;
-}
-.portfo-img {
-    width: 266px;
+.td {
+    align-items: left;
+    width: 268px;
     height: 200px;
+    position: relative;
+}
+
+td:empty {
+    width: 50px;
+}
+
+.tr {
+    align-items: left;
+    width: 610px;
+    height: 255px;
+    position: relative;
+}
+
+
+.portfo-img {
+    width: 268px;
+    height: 200px;
+}
+
+.overlay-text {
+    width: 268px;
+    height: 60px;
+    padding: 20px;
+    margin-top: 126px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: absolute;
 }
 
 #footer-wrapper {
