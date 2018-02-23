@@ -157,6 +157,11 @@ p {
     height: 61px;
 }
 
+.linked-img:hover {
+    opacity: 0.7;
+}
+
+
 #input-field {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
